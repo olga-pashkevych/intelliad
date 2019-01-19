@@ -1,0 +1,12 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+#currency_current:
+#  path: /currency/current
+#  controller: App\Controller\CurrencyController::current
+
+currency_get_rates:
+  path: /currency/get_rates/{currency}
+  controller: App\Controller\CurrencyController::getRates
+  defaults:   { currency: '' }
